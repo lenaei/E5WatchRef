@@ -29,4 +29,5 @@ Le compte Admin dispose des droits nécessaires pour référencer des médias, a
 Un utilisateur normal peut s'inscrire, se connecter, se déconnecter et consulter le catalogue, sans avoir de privilèges pour ajouter ou modifier des contenus.
 
 Schéma UML de la base de donnée : https://imgur.com/a/8ovHYh9
+
 Schéma des fonctionnalités de chaque utilisateur : https://imgur.com/a/s5WCzvL
