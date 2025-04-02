@@ -1,0 +1,180 @@
+/* styles/ajouterMedia.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+form {
+    background-color: #181818;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #e50914;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #e50914;
+}
+
+textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.file-input-container {
+    margin: 1.5rem 0;
+}
+
+.file-input-label {
+    display: block;
+    padding: 1rem;
+    background-color: #333;
+    border: 2px dashed #555;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.file-input-label:hover {
+    border-color: #e50914;
+}
+
+.file-input-label span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.radio-option {
+    flex: 1;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-option label {
+    display: block;
+    padding: 0.8rem;
+    background-color: #333;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.radio-option input[type="radio"]:checked + label {
+    background-color: #e50914;
+    color: white;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+button, .back-button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+}
+
+button:hover {
+    background-color: #f40612;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #444;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 1.5rem;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+}
